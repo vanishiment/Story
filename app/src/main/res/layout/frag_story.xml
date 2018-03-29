@@ -4,12 +4,16 @@
              android:layout_height="match_parent"
              tools:context="io.app.story.StoryFrag">
 
-    <TextView
-            android:id="@+id/frag_tv"
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/frag_swipe_fresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/frag_recycler_view"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:textSize="22sp"
-            android:text="@string/hello_blank_fragment"/>
+            android:layout_height="match_parent"/>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
 
 </FrameLayout>
